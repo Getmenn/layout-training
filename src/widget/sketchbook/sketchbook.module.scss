@@ -1,0 +1,93 @@
+.sketchbook {
+    overflow: hidden;
+
+    .container {
+        width: 100%;
+        max-width: var(--w-container);
+        margin: auto;
+        padding: var(--padding);
+        padding-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content {
+            p{
+                color: var(--light-gray-txt);
+                line-height: 170%;
+                width: 350px;
+                margin-top: 8px;
+            }
+
+            .button{
+                margin-top: 30px;
+            }
+        }
+
+        .sketchbook{
+            display: none;
+        }
+
+        .sketchbookBig{
+            width: calc(650px + (730 - 650) * ((100vw - 1000px) / (1440 - 1000)));
+            height: calc(360px + (410 - 360) * ((100vw - 1000px) / (1440 - 1000)));
+        }
+
+        @media (min-width: 1440px){
+            .sketchbookBig{
+                width: 730px;
+                height: 410px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            align-items: unset;
+            
+            .content{
+                p{
+                    margin-top: 20px;
+                }
+            }
+
+            .sketchbookBig{
+                display: none;
+            }
+
+            .sketchbook{
+                min-width: calc(300px + (369 - 300) * ((100vw - 576px) / (768 - 576)));
+                height: calc(280px + (334 - 280) * ((100vw - 576px) / (768 - 576)));
+                display: block;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            flex-direction: column-reverse;
+            padding: var(--padding);
+
+            .sketchbook{
+                width: calc(290px + (449 - 290) * ((100vw - 380px) / (576 - 380)));
+                height: calc(221px + (342 - 221) * ((100vw - 380px) / (576 - 380)));
+            }
+
+        }
+    
+        @media (max-width: 380px) {
+            .content {
+                p{
+                    width: auto;
+                    font-size: 16px;
+                }
+            }
+
+            .sketchbook{
+                width: 290px;
+                height: 221px;
+            }
+        }
+    }
+}
+
+
+
+
+

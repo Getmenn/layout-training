@@ -1,0 +1,22 @@
+.button{
+    padding: 24px 90px;
+    text-align: center;
+    border: 1px solid var(--purple-bg);
+    color: var(--purple-txt);
+    background: transparent;
+    transition: .4s ease;
+    font-size: 20px;
+
+    &:hover{
+        background: var(--purple-bg);
+        color: var(--white-txt);
+    }
+
+    @media (max-width: 576px) {
+        padding: 19px 60px;
+    }
+
+    @media (max-width: 320px) {
+        padding: 15px 38px;
+    }
+}

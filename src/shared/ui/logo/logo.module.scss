@@ -1,0 +1,32 @@
+.logoWrapper{
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    align-items: center;
+
+    .circle{
+        border: 1px solid #333;
+        border-radius: 50%;
+        height: 17px;
+        width: 17px;
+    }
+
+    .longCircle{
+        border: 1px solid #333;
+        border-radius: 11px;
+        height: 17px;
+        width: 32px;
+    }
+
+    &.light{
+        color: var(--white-txt);
+
+        .circle{
+            border: 1px solid var(--main-bg);
+        }
+    
+        .longCircle{
+            border: 1px solid var(--main-bg);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'variable';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap';
+
+body {
+    min-height: 100vh;
+    background: var(--main-bg);
+}
+
+*{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}

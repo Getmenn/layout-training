@@ -1,0 +1,33 @@
+.products {
+    .container {
+        width: 100%;
+        max-width: var(--w-container);
+        margin: auto;
+        padding: var(--padding);
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (max-width: 1180px) {
+            &::before, &::after {
+                content: '';
+                width: 100%;
+                order: 0;
+            }
+
+            .productItem:nth-child(n + 3) {
+                order: 1;
+            }
+
+        }
+
+        @media (max-width: 576px) {
+        }
+    
+        @media (max-width: 380px) {
+            gap: 60px;
+        }
+    }
+
+}

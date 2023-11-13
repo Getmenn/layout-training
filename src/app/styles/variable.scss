@@ -1,0 +1,42 @@
+:root{
+    // === txt ===
+    --main-txt: #4C5866;
+    --second-txt: #666;
+    --light-gray-txt: #85859B;
+    --lighter-gray-txt: #B5B5BD;
+    --white-txt: #fff;
+    --purple-txt: #7875FE;
+    
+    // === bg ===
+    --main-bg: #fff;
+    --second-bg: #B5B5BD;
+    --gray-bg: #EBEBEB;
+    --dark-bg: #4C5866;
+    --purple-bg: #7875FE;
+
+
+    // === size ===
+    --w-container: 1178px;
+    --padding-container: 39px;
+    --padding: 90px 39px;
+
+    @media (max-width: 768px) {
+        --w-container: 768px;
+        --padding-container: 39px;
+        --padding: 60px 39px;
+    }
+
+    @media (max-width: 576px) {
+        --w-container: 574px;
+        --padding-container: 32px;
+        --padding: 60px 32px;
+    }
+
+    @media (max-width: 380px) {
+        --w-container: 319px;
+        --padding-container: 15px;
+        --padding: 60px 15px;
+    }
+
+    // === z-index ===
+}
